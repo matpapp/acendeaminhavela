@@ -1,0 +1,61 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E84B30; /* Cor de fundo alterada */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px; /* Move o título para cima */
+    font-size: 48px;
+}
+
+.candle-container {
+    position: relative;
+}
+
+.candle {
+    width: 300px; /* Tamanho da vela */
+    height: 600px; /* Tamanho da vela */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/018/825/343/original/candle-ligth-flat-illustration-free-png.png'); /* Imagem da vela */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto; /* Espaçamento da vela com os botões */
+    transition: opacity 0.3s ease, width 1s cubic-bezier(0.4, 0, 0.2, 1), height 1s cubic-bezier(0.4, 0, 0.2, 1); /* Transição suave da opacidade */
+}
+
+.buttons {
+    margin-top: -20px; /* Espaçamento entre a vela e os botões */
+}
+
+.buttons button {
+    padding: 20px 40px; /* Tamanho maior para os botões */
+    font-size: 24px; /* Tamanho maior para os botões */
+    margin: 0 10px;
+    cursor: pointer;
+    border: none; /* Remove a borda dos botões */
+    border-radius: 50px; /* Borda arredondada */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.btn-yes, .btn-no {
+    background-color: #42C4F5; /* Cor de fundo dos botões alterada */
+    color: #fff;
+}
+
+.buttons button:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+.buttons button:focus {
+    outline: none; /* Remove a borda de foco */
+}
+
